@@ -3,7 +3,7 @@ import { ArrowDown, ArrowRight, Bluetooth, MessageSquare, Mic } from "lucide-rea
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const FRAME_COUNT = 96;
-const FRAME_BASE = "/assets/veyro-frames/";
+const FRAME_BASE = `${import.meta.env.BASE_URL}assets/veyro-frames/`;
 const CHAPTERS = [
   {
     title: "01 / THE DESIGN",
