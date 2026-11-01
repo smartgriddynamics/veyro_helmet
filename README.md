@@ -23,3 +23,9 @@ The browser uses only the Supabase anon key; never put a `service_role` key in a
 npm run build
 npm run preview
 ```
+
+## Deploy to GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` builds the Vite site and deploys the `dist` directory whenever changes are pushed to `main`.
+
+In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. The first workflow run will then publish the site.
